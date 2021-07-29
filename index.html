@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="./script.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="setup">
+      <button id="pvp">PVP</button>
+      <br />
+      <button id="pve">PVE</button>
+    </div>
+    <div id="board">
+      <div id="button-container">
+        <button id="line0-col0"></button>
+        <button id="line0-col1"></button>
+        <button id="line0-col2"></button>
+        <button id="line1-col0"></button>
+        <button id="line1-col1"></button>
+        <button id="line1-col2"></button>
+        <button id="line2-col0"></button>
+        <button id="line2-col1"></button>
+        <button id="line2-col2"></button>
+      </div>
+    </div>
+    <i id="message"></i>
+  </body>
+  <style>
+    #message {
+      font-size: xx-large;
+      padding-left: 47%;
+      color: rgb(255, 11, 11);
+    }
+    #setup {
+      padding-left: 45%;
+      padding-top: 20%;
+    } 
+
+    #button-container {
+      width: 393px;
+      background: gray;
+      overflow-y: auto;
+    }
+
+    #button-container > button {
+      width: 100px;
+      height: 100px;
+      float: left;
+      background: lightgray;
+      margin: 15px;
+      font-size: xx-large;
+    }
+
+    #board {
+        padding-left: 35%;
+        padding-top: 10%;
+        display: none;
+    }
+
+  </style>
+</html>

@@ -1,0 +1,2 @@
+const XSYMBOL = 'X', ZEROSYMBOL = 'O', NOBODY = 'NOBODY', n = 3;
+export {XSYMBOL, ZEROSYMBOL, NOBODY, n};
