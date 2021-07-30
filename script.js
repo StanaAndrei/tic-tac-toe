@@ -55,12 +55,12 @@ const handleBoardBtnClick = e => {
     }
     board[line][col] = boardBtn[line][col].innerText = assignChar.next().value;
     manageGameStatus();
-    if (mode === 'pve' && gameOver === false) {
+    if (mode === 'pve' && !gameOver) {
         let { i, j } = mkBestMove(board);
         if (i === -1) {
             return;
         }
-        console.log(i, j);
+        //console.log(i, j);
         board[i][j] = boardBtn[i][j].innerText = assignChar.next().value;
         manageGameStatus();
     }
