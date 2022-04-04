@@ -1,6 +1,6 @@
 import getWinner from "./getWinner.js";
 import { XSYMBOL, ZEROSYMBOL, n } from "./constants.js";
-import mkBestMove from "./ai.js";
+import ticTacToeAI from "./ai.js";
 
 const pvpBtn = document.querySelector('#pvp');
 const pveBtn = document.querySelector('#pve');
@@ -56,7 +56,7 @@ const handleBoardBtnClick = e => {
     board[line][col] = boardBtn[line][col].innerText = assignChar.next().value;
     manageGameStatus();
     if (mode === 'pve' && !gameOver) {
-        let { i, j } = mkBestMove(board);
+        let { i, j } = ticTacToeAI.mkBestMove(board);
         if (i === -1) {
             return;
         }
